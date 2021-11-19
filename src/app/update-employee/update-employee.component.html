@@ -1,0 +1,27 @@
+<div class="container">
+  <h2>Update Employee</h2>
+  <form [formGroup]="updateForm" (ngSubmit)="onUpdate()">
+    <input
+      type="number"
+      placeholder="Enter Employee ID"
+      formControlName="eid"
+      name="eid"
+      class="form-control"
+    />
+    <input
+      type="text"
+      placeholder="Enter Employee name"
+      formControlName="ename"
+      class="form-control"
+      name="ename"
+    />
+    <input
+      type="number"
+      placeholder="Enter Employee salary"
+      formControlName="salary"
+      class="form-control"
+      name="salary"
+    />
+    <input type="submit" value="Update" class="btn btn-primary" />
+  </form>
+</div>

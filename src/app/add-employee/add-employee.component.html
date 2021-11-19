@@ -1,0 +1,27 @@
+<div class="container">
+  <h2>Add Employee</h2>
+  <form [formGroup]="insertForm" (ngSubmit)="onInsert()">
+    <input
+      type="number"
+      placeholder="Enter Employee ID"
+      formControlName="eid"
+      name="eid"
+      class="form-control"
+    />
+    <input
+      type="text"
+      placeholder="Enter Employee name"
+      formControlName="ename"
+      name="ename"
+      class="form-control"
+    />
+    <input
+      type="number"
+      placeholder="Enter Employee salary"
+      formControlName="salary"
+      name="salary"
+      class="form-control"
+    />
+    <input type="submit" value="Add" class="btn btn-primary" />
+  </form>
+</div>

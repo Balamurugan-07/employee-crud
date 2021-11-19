@@ -1,0 +1,10 @@
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.btn {
+  width: 200px;
+  margin: 10px;
+}
